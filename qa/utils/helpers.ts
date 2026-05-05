@@ -1,8 +1,6 @@
-import * as fs from 'fs';
-import * as path from 'path';
+import { readTestData, generateRandomEmail } from '../utils/helpers';
 
-export function readTestData(fileName: string) {
-  const filePath = path.resolve(__dirname, `../test-data/${fileName}`);
-  const data = fs.readFileSync(filePath, 'utf-8');
-  return JSON.parse(data);
-}
+const data = readTestData('users.json');
+
+console.log(data.validUser);
+console.log(generateRandomEmail());
