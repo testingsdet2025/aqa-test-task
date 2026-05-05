@@ -1,1 +1,24 @@
-
+{
+  "validUser": {
+    "username": "admin",
+    "password": "password"
+  },
+  "invalidUser": {
+    "username": "admin",
+    "password": "wrongpassword"
+  },
+  "emptyUser": {
+    "username": "",
+    "password": ""
+  },
+  "usersList": [
+    {
+      "username": "user1",
+      "password": "pass1"
+    },
+    {
+      "username": "user2",
+      "password": "pass2"
+    }
+  ]
+}
